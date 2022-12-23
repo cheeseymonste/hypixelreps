@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hypixel Reputation</title>
+    <link rel="icon" type="image/x-icon" href="Images/hypixelLogo.ico" />
+    <link rel="stylesheet" href="Styles/general.css" />
+    <link rel="stylesheet" href="Styles/header.css" />
+    <link rel="stylesheet" href="Styles/body.css" />
+    <link rel="stylesheet" href="Styles/popup.css" />
+    <script src="js/alert.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="body">
+    <div class="header">
+      <div>
+        <a href="index.html" class="pagelink">
+          <img src="Images/hypixel-logo.png" class="logo" />
+        </a>
+      </div>
+
+      <button class="info">
+        <a href="about.html" class="pagelink"> What We Are About </a>
+      </button>
+
+      <button class="help">
+        <a href="help.html" class="pagelink"> How You Can Help Us! </a>
+      </button>
+
+      <button class="sign-up">
+        <a href="sign-up.html" class="pagelink"> Sign Up </a>
+      </button>
+
+      <button class="login">
+        <a href="login.html" class="pagelink"> Login </a>
+      </button>
+    </div>
+
+    <div class="home-page">Home Page</div>
+
+    <div class="linebreak"></div>
+
+    <div class="Reputations">
+      <div class="reputationsAlex">
+        <div class="img">
+          <img class="Imgproperties" src="Images/profilepicture.png" />
+        </div>
+        <div class="player">Alex</div>
+      </div>
+
+      <div class="comment">
+        <div>Hey guys today I helped a player out in Hypixel Skyblock.</div>
+        <div>I maxed out his Giant's Sword for a reputation :)</div>
+        <div>Please give me reps Guys. Thanks so much.</div>
+      </div>
+
+      <div class="like">
+        <button id="clickBtn" class="likebutton">&#128077;</button>
+        <div class="likenumber">54</div>
+      </div>
+
+      <div class="replys"></div>
+    </div>
+
+    <div class="Reputations">
+      <div class="reputationsCaveJones">
+        <div class="img">
+          <img class="Imgproperties" src="Images/profilepicture2.png" />
+        </div>
+
+        <div class="player2">CaveJones</div>
+      </div>
+    </div>
+
+    <div id="popup">
+      <div class="popup-container">
+        <div class="popup">
+          <div class="close-popup" id="closeBtn"><a href="#">X</a></div>
+          <h2>You are not logged into an account!</h2>
+          <p>
+            Please click <a href="sign-up.html" class="clicksignup">here</a> to
+            Sign Up. Please click
+            <a href="login.html" class="clicksignup">here</a> to login.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const clickBtn = document.getElementById("clickBtn");
+      const popup = document.getElementById("popup");
+      const closeBtn = document.getElementById("closeBtn");
+
+      clickBtn.addEventListener("click", () => {
+        popup.style.display = "block";
+      });
+      closeBtn.addEventListener("click", () => {
+        popup.style.display = "none";
+      });
+      popup.addEventListener("click", () => {
+        popup.style.display = "none";
+      });
+    </script>
+  </body>
+</html>
