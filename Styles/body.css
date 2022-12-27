@@ -225,7 +225,11 @@
 }
 
 .please-sign-up {
-  margin-top: 20px;
+  margin-top: 10px;
+}
+
+.please-sign-up2 {
+  margin-bottom: 10px;
 }
 
 .account {
@@ -256,6 +260,7 @@
   min-width: 40px;
 }
 
+.input-field-email,
 .input-field-username,
 .input-field-password {
   width: 100%;
@@ -265,9 +270,14 @@
   margin-bottom: 10px;
 }
 
+.alignmicrosoft {
+  margin-left: 27px;
+  display: flex;
+  justify-content: center;
+}
+
 .microsoft {
   margin-bottom: 25px;
-  margin-left: 743px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -309,7 +319,6 @@
 }
 
 .submit {
-  margin-left: 765px;
   padding-left: 150px;
   padding-right: 150px;
   padding-top: 15px;
