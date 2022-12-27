@@ -6,6 +6,10 @@
     <link rel="stylesheet" href="Styles/general.css" />
     <link rel="stylesheet" href="Styles/header.css" />
     <link rel="stylesheet" href="Styles/body.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -40,14 +44,33 @@
       </button>
     </div>
 
-    <div class="home-page">Login Page</div>
+    <div class="home-page">Sign Up Page</div>
 
     <div class="linebreak"></div>
 
-    <div class="account">Log In:</div>
+    <div class="please-sign-up">
+      We would really appreciate it if you could give us a reputation by signing
+      up to our website.
+    </div>
+    <div class="please-sign-up2">Thank you again in advance.</div>
+    <div class="linebreak2"></div>
 
+    <div class="account">Create An Account:</div>
+
+    <div class="alignmicrosoft">
+      <a href="https://bit.ly/verify-hypixel" class="sign-in-with-microsoft">
+        <button class="microsoft">
+          <img class="microsoftimg" src="Images/microsoft.png" />Sign in with
+          Microsoft
+        </button>
+      </a>
+    </div>
+    <div class="or">or</div>
     <form class="inline">
       <div class="input-icons">
+        <i class="fa fa-envelope icon"></i>
+        <input class="input-field-email" type="text" placeholder="Email" />
+
         <i class="fa fa-user icon"></i>
         <input
           class="input-field-username"
@@ -60,13 +83,21 @@
           type="password"
           placeholder="Password"
         />
+        <i class="fa fa-lock icon"></i>
+        <input
+          class="input-field-password"
+          type="password"
+          placeholder="Confirm password"
+        />
       </div>
     </form>
-    <button
-      class="submit"
-      onclick="alert('Error. Could not Register User. Please try something else.');"
-    >
-      Submit
-    </button>
+    <div class="alignmicrosoft">
+      <button
+        class="submit"
+        onclick="alert('Error. Could not Register User. Please try something else.');"
+      >
+        Submit
+      </button>
+    </div>
   </body>
 </html>
